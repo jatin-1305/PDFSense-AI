@@ -1,18 +1,21 @@
-# PDFSense AI (RAG-Based Multi-Document QA System using LangChain & Groq)
+# PDFSense AI: RAG-Based Multi-Document QA System using LangChain, Groq & Streamlit
 
 ## 📌 Overview
-**PDFSense-AI** is an AI-powered document intelligence system that enables users to interact with multiple PDF documents using natural language.
+**PDFSense-AI** is an AI-powered document intelligence system that enables users to interact with multiple PDF documents through a simple and intuitive web interface.
 
-Built using **Retrieval-Augmented Generation (RAG)**, **LangChain**, and **Groq LLMs**, the system retrieves relevant context from uploaded PDFs and generates accurate, context-aware answers. It also incorporates **chat history memory**, allowing for more conversational and context-aware interactions.
+Built using **Retrieval-Augmented Generation (RAG)**, **LangChain**, and **Groq LLMs**, the system retrieves relevant information from uploaded PDFs and generates accurate, context-aware answers. It also leverages **chat history memory** to support conversational interactions.
+
+The application is deployed with a **Streamlit UI**, making it easy to upload documents and ask questions in real time.
 
 ---
 
 ## 🚀 Features
 - 📄 Upload and query **multiple PDF documents**
-- 🔍 **Semantic search** using embeddings (not keyword-based)
+- 🌐 Interactive **Streamlit web interface**
+- 🔍 **Semantic search** using embeddings
 - 🤖 **Accurate answers using RAG architecture**
 - ⚡ High-speed inference using **Groq LLMs**
-- 🧠 **Chat history memory** for contextual conversations
+- 🧠 **Chat history memory** for conversational context
 - 📚 Reduced hallucination via document-grounded responses
 
 ---
@@ -22,28 +25,28 @@ Built using **Retrieval-Augmented Generation (RAG)**, **LangChain**, and **Groq 
 The application follows a **RAG pipeline**:
 
 1. **Document Loading**  
-   PDFs are ingested and parsed into raw text  
+   PDFs are uploaded via Streamlit and parsed  
 
 2. **Text Chunking**  
-   Documents are split into smaller chunks for better retrieval  
+   Documents are split into smaller chunks  
 
 3. **Embeddings Generation**  
    Text chunks are converted into vector embeddings  
 
 4. **Vector Store**  
-   Embeddings are stored in a vector database (FAISS/Chroma)  
+   Stored in FAISS/Chroma for fast retrieval  
 
 5. **Query Processing**  
-   User queries are embedded and matched against stored vectors  
+   User queries are embedded  
 
-6. **Context Retrieval**  
-   Most relevant chunks are retrieved using similarity search  
+6. **Similarity Search**  
+   Relevant chunks are retrieved  
 
 7. **LLM Response Generation (Groq)**  
-   Retrieved context + chat history is passed to the LLM to generate answers  
+   Context + chat history → LLM → final answer  
 
 8. **Memory Integration**  
-   Chat history is maintained to support follow-up questions  
+   Maintains conversation continuity  
 
 ---
 
@@ -51,18 +54,15 @@ The application follows a **RAG pipeline**:
 
 - **LangChain** – LLM orchestration framework  
 - **RAG (Retrieval-Augmented Generation)** – Core architecture  
-- **Groq LLMs** – Fast inference for response generation  
-- **FAISS** – Vector database  
-- **Python** – Backend implementation  
+- **Groq LLMs** – Fast inference engine  
+- **Streamlit** – Interactive UI  
+- **FAISS / Chroma** – Vector database  
+- **Python** – Backend  
 - **PyPDFLoader** – PDF processing  
-
----
-
-## 📂 Project Structure
-
 
 ---
 
 
 Screenshot-
-<img width="1718" height="981" alt="image" src="https://github.com/user-attachments/assets/14674558-237c-4808-adb8-c581d5c2b7c7" />
+<img width="1716" height="675" alt="image" src="https://github.com/user-attachments/assets/f8e9cf04-082c-4194-9d3a-2c0900973f65" />
+
