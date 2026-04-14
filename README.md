@@ -50,3 +50,7 @@ The system retrieves relevant information from the documents and generates **acc
 - **PyPDF / PDF Loaders** – Document processing  
 
 ---
+
+
+Screenshot-
+<img width="1718" height="981" alt="image" src="https://github.com/user-attachments/assets/14674558-237c-4808-adb8-c581d5c2b7c7" />
