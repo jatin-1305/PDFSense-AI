@@ -105,7 +105,7 @@ def main():
         handle_userinput(user_question.strip())
 
     if st.session_state.chat_history:
-
+        _render_chat_history(st.session_state.chat_history)
 
     with st.sidebar:
         st.subheader("Your Documents")
